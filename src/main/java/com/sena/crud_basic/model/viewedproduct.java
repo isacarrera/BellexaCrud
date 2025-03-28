@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 
-@Entity(name = "favoriteproduct")
-public class favoriteproduct {
+@Entity(name = "viewedproduct")
+public class viewedproduct {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,6 +18,6 @@ public class favoriteproduct {
     @Column(name = "product_id", nullable = false)
     private Long productId;
 
-    @Column(name = "added_date", nullable = false)
-    private LocalDateTime addedDate;
+    @Column(name = "viewed_date", nullable = false)
+    private LocalDateTime viewedDate;
 }
